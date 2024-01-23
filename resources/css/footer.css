@@ -1,0 +1,17 @@
+ul {
+    list-style-type: none;
+  }
+
+.lang{
+
+    /* position: absolute;
+    bottom: -1700px;
+    left: 1px; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+
+}

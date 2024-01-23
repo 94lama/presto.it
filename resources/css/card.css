@@ -1,0 +1,34 @@
+.card-announcement {
+    width: 300px;
+    height: 460px;
+    margin: 2rem;
+    padding: .8em;
+    position: relative;
+    overflow: visible;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px var(--dark), 0 1px 2px var(--dark);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.card-announcement a {
+    display: block;
+    width: 100%;
+    height: 70%;
+}
+
+.card-announcement a img {
+    height: 322px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Hover
+    non ci sono hover
+*/
+/* .card-announcement button:hover {
+    background-color: var(--secondary);
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+} */

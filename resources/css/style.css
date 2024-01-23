@@ -1,0 +1,200 @@
+/* ///[Root] */
+:root, [data-bs-theme=light]{
+    --black: #1B1E22;
+    --dark: #2B2E32;
+    --dark-permanent:#2B2E32; 
+
+    --white: #EEEEEE;
+    --light: #dddddd;
+    --light-permanent: #dddddd;
+
+    --primary: #3f7884;
+    --secondary: #e8ecf3;
+    --tertiary: #44312f;
+    --accent: #020441;
+    --neon: #b4f8f3;
+}
+
+:root, [data-bs-theme=dark]{
+    --white: #1B1E22;
+    --light: #2B2E32;
+    --light-permanent: #dddddd;
+
+    --dark: #EEEEEE;
+    --black: #dddddd;
+    --dark-permanent:#2B2E32; 
+
+
+    --primary: teal /* #3f7884 */;
+    --secondary: #e8ecf3;
+    --tertiary: #44312f;
+    --accent: #020441;
+}
+
+@font-face {
+    font-family: Vantely;
+    src: url(/public/fonts/Vantely.otf);
+}
+@font-face {
+    font-family: Prototype;
+    src: url(/public/fonts/Prototype.ttf);
+}
+
+/* ///[Testi] */
+*{
+    word-break: break-word;
+}
+
+h1{
+    font-size: 72pt;
+    overflow-wrap:break-word;
+    margin-left: -2vw;
+}
+
+h2 {
+    font-family: Prototype, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36pt;
+}
+
+.font-title{
+    
+    font-family: Vantely, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-header{
+    font-family: Prototype, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-normal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-normal-rounded{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.color-primary{
+    color: var(--primary);
+}
+.color-secondary{
+    color: var(--secondary);
+}
+.color-tertiary{
+    color: var(--tertiary);
+}
+.color-neon{
+    color: var(--neon);
+}
+.color-light{
+    color: var(--light);
+}
+.color-dark{
+    color: var(--dark);
+}
+
+.text-neon {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px var(--neon), 0 0 30px var(--neon), 0 0 40px var(--neon), 0 0 55px var(--neon), 0 0 50px var(--neon);
+    }
+
+/* ///[dark-mode switch */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 5;
+}
+
+
+.icon-img{
+    height: 117.99px;
+    z-index: 1; 
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--light);
+    transition: .5s;
+}
+
+input:checked+.slider {
+    background-color: var(--secondary)
+        /* #522ba7 */
+    ;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+/* ///[Image size] */
+.img-preview {
+    width: 400px;
+    height: 300px;
+}
+
+/* ///[Buttons] */
+.btn-success {
+    background: var(--primary);
+}
+
+.btn-danger {
+    background: var(--primary);
+}
+
+
+/* ///[breakpoints] */
+/* Breakpoints
+    sm: 576px
+    md: 768px
+    lg: 992px
+    xl: 1200px
+    xxl: 1400px
+*/
+
+@media screen and (max-width:768px) {
+
+    #navbarSupportedContent {
+        position: fixed;
+        right: 20px;
+        top: 5rem;
+        padding: 20px;
+    }
+}
+
+ul {
+    list-style-type: none;
+  }

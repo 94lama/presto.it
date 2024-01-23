@@ -1,0 +1,28 @@
+.h-show-carousel{
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.h-show-carousel .swiper-slide{
+    height: 60px;
+}
+
+.announcement-image-main{
+    width: 50vw;
+    height: 60vh;
+}
+
+.swiper-button-prev{
+    position: absolute;
+    left: 0rem;
+}
+
+.img-cover{
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+    .announcement-image-main{
+        width: 100%;
+    }
+}

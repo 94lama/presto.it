@@ -1,0 +1,110 @@
+.wallet {
+    --bg-color: var(--secondary)
+        /* #CEB2FC */
+    ;
+    /* --bg-color-light: #F0E7FF; */
+    /* --bg-color-light: #c4d8ec; */
+    --bg-color-light: var(--light);
+
+    --text-color-hover: var(--white);
+    --box-shadow-color: var(--black);
+}
+
+.card_category {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+    background: #b8c7d6;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 14px 26px var(--black);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.card_category:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px var(--black),
+        0 24px 46px var(--box-shadow-color);
+    transform: scale(1.25);
+    z-index: 1;
+}
+
+.card_category:hover .overlay {
+    transform: scale(4) translateZ(0);
+}
+
+.card_category:hover .circle {
+    border-color: var(--light);
+    background: var(--light);
+}
+
+.card_category:hover .circle:after {
+    background: var(---light);
+}
+
+.card_category:hover p {
+    color: var(--light);
+}
+
+.card_category:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px var(--black),
+        0 15px 24px var(--dark);
+}
+
+.card_category p {
+    font-size: 17px;
+    color: var(--accent);
+    margin-top: 30px;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+}
+
+.circle {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.circle:after {
+    content: "";
+    width: 118px;
+    height: 118px;
+    display: block;
+    position: absolute;
+    background: var(--primary);
+    border-radius: 50%;
+    transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+    z-index: 10000;
+    transform: translateZ(0);
+}
+
+.overlay {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--accent);
+    top: calc(50% - 59px);
+    left: calc(50% - 59px);
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+}

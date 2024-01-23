@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="#ffffff">
+<metadata>
+Created by FontForge 20200511 at Fri Mar 26 03:42:48 2021
+ By convertio
+Vantely Personal use Din Studio. 2020. All Rights Reserved
+</metadata>
+<defs>
+<font id="VantelyPersonaluse" horiz-adv-x="1618" >
+  <font-face 
+    font-family="Vantely Personal use"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 5 0 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    x-height="763"
+    cap-height="998"
+    bbox="10.9825 -361 4654 1220.21"
+    underline-thickness="50"
+    underline-position="-75"
+    unicode-range="U+001D-2265"
+  />
+    <hkern g1="A,Agrave,Aacute,Acircumflex,Atilde,Adieresis,Aring"
+	g2="e,egrave,eacute,ecircumflex,edieresis"
+	k="80" />
+  </font>
+</defs></svg>

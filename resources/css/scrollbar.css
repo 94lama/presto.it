@@ -1,0 +1,33 @@
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--white)
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    border-radius: 5px;
+    box-shadow: var(--white), -5px -5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
+
+  /* Arrows */
+  ::-webkit-scrollbar-button {
+    height: 0;
+  }
+
+  a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+

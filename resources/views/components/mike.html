@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/resources/css/style.css">
+</head>
+
+<body>
+  
+  <div class="m-5 row">
+    <div class="col-12 col-md-4">
+      <style>
+        .card {
+          --font-color: #323232;
+          --bg-color: #e0e0e0;
+          width: 250px;
+          height: 350px;
+          border-radius: 20px;
+          background: var(--bg-color);
+          box-shadow: -9px 9px 18px #5a5a5a,
+          9px -9px 18px #ffffff;
+          display: flex;
+          flex-direction: column;
+          transition: .4s;
+          position: relative;
+        }
+        
+        .card:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 0px 10px 2px #5a5a5a;
+        }
+        
+        .card__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px 20px 0 0;
+          background-color: blueviolet;
+        }
+        
+        .card__descr-wrapper {
+          padding: 15px;
+          display: grid;
+        }
+        
+        .card__title {
+          color: var(--font-color);
+          text-align: center;
+          margin-bottom: 15px;
+          font-weight: 900;
+          font-size: 16px;
+        }
+        
+        .card__descr {
+          color: var(--font-color);
+        }
+        
+        .svg {
+          width: 25px;
+          height: 25px;
+          transform: translateY(25%);
+          fill: var(--font-color);
+        }
+        
+        .card__links {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-self: flex-end;
+        }
+        
+        .card__links .link {
+          color: var(--font-color);
+          font-weight: 600;
+          font-size: 15px;
+          text-decoration: none;
+        }
+        
+        .card__links .link:hover {
+          text-decoration: underline;
+        }
+        
+      </style>
+      <div class="card">
+        <div class="card__img"></div>
+        <div class="card__descr-wrapper">
+          <p class="card__title">
+            Project
+          </p>
+          <p class="card__descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis nemo fugit autem possimus, magnam consequatur sint esse.
+          </p>
+          <div class="card__links">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg">&lt;<path d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"></path></svg>
+              <a class="link" href="#">Preview</a>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+              <a class="link" href="#">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-4">
+      <style>
+        .post-card {
+          width: 320px;
+          background: lightgrey;
+          background-color: rgb(24 27 32);
+          border: 1px solid rgb(84 90 106);
+          border-radius: 20px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          padding: 10px 20px;
+        }
+        
+        .avatar {
+          height: 35px;
+          width: 35px;
+          border-radius: 50%;
+          background-color: blueviolet;
+          background-image: linear-gradient(to top left, blueviolet,rgb(73, 31, 112));
+        }
+        
+        .title {
+          font-size: 20px;
+          line-height: 22px;
+          font-weight: 600;
+          margin-top: 10px;
+          color: #fff;
+          text-decoration: none;
+          transition: all .35s ease-in;
+        }
+        
+        .title:hover {
+          text-decoration: underline blueviolet;
+        }
+        
+        .datetime {
+          font-size: 12px;
+          color: rgb(168 179 207);
+          margin: 10px 0;
+        }
+        
+        .image-preview {
+          flex: 1;
+          min-height: 150px;
+          width: 100%;
+          border-radius: 20px;
+          background-color: blueviolet;
+          background-image: linear-gradient(to top left, blueviolet,rgb(73, 31, 112));
+          margin-bottom: 4px;
+        }
+        
+        .comment-like {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 2px 0;
+        }
+        
+        .comment-like span {
+          cursor: pointer;
+          height: 40px;
+          width: 50px;
+          padding: 0 3px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          border-radius: 10px;
+          background-color: transparent;
+          transition: all .15s ease;
+        }
+        
+        .comment-like span:hover {
+          background-color: rgba(137, 43, 226, 0.096);
+        }
+        
+        .comment-like span svg {
+          fill: rgb(255, 255, 255);
+          margin-right: 2px;
+        }
+      </style>
+      <div class="post-card">
+        <div class="avatar"></div>
+        <a href="#" class="title">7 Tools for Faster Development in React</a>
+        <span class="datetime">3 min to read</span>
+        <div class="image-preview"></div>
+        <div class="comment-like">
+          <span><svg fill="" xml:space="preserve" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Uploaded to svgrepo.com" version="1.1"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path d="M21.081,6C23.752,6.031,26,8.766,26,12c0,5.106-6.47,10.969-10.001,13.593 C12.466,22.974,6,17.12,6,12c0-3.234,2.248-5.969,4.918-6C13.586,6.175,13.926,6.801,16,8.879C18.069,6.806,18.418,6.173,21.081,6 M20.911,4.006L20.912,4C18.993,4,17.259,4.785,16,6.048C14.741,4.785,13.007,4,11.088,4l0.001,0.006C7.044,3.936,4,7.719,4,12 c0,8,11.938,16,11.938,16h0.124C16.062,28,28,20,28,12C28,7.713,24.951,3.936,20.911,4.006z" class="bentblocks_een"></path> </g></svg>10</span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="" d="M4.49999 20.25C4.37892 20.2521 4.25915 20.2248 4.1509 20.1705C4.04266 20.1163 3.94916 20.0366 3.87841 19.9383C3.80766 19.8401 3.76175 19.7261 3.74461 19.6063C3.72747 19.4864 3.73961 19.3641 3.77999 19.25L5.37999 14C5.03175 13.0973 4.85539 12.1375 4.85999 11.17C4.8584 10.1057 5.06918 9.0518 5.47999 8.06999C5.88297 7.13047 6.45975 6.27549 7.17999 5.54999C7.90382 4.82306 8.76344 4.24545 9.70999 3.84999C10.6889 3.4344 11.7415 3.22021 12.805 3.22021C13.8685 3.22021 14.9211 3.4344 15.9 3.84999C17.3341 4.46429 18.5573 5.48452 19.4191 6.7851C20.2808 8.08568 20.7434 9.60985 20.75 11.17C20.7437 13.2771 19.9065 15.2966 18.42 16.79C17.6945 17.5102 16.8395 18.087 15.9 18.49C14.0091 19.2819 11.8865 19.3177 9.96999 18.59L4.71999 20.19C4.64977 20.22 4.57574 20.2402 4.49999 20.25ZM12.8 4.74999C11.5334 4.75547 10.2962 5.13143 9.24068 5.83153C8.18519 6.53164 7.35763 7.52528 6.85999 8.68999C6.19883 10.2911 6.19883 12.0889 6.85999 13.69C6.91957 13.8548 6.91957 14.0352 6.85999 14.2L5.62999 18.37L9.77999 17.11C9.94477 17.0504 10.1252 17.0504 10.29 17.11C11.0824 17.439 11.932 17.6083 12.79 17.6083C13.648 17.6083 14.4976 17.439 15.29 17.11C16.0708 16.7813 16.779 16.3018 17.3742 15.6989C17.9693 15.096 18.4397 14.3816 18.7583 13.5967C19.077 12.8118 19.2376 11.9717 19.231 11.1245C19.2244 10.2774 19.0508 9.4399 18.72 8.65999C18.2234 7.50094 17.398 6.51285 16.3459 5.81792C15.2937 5.123 14.0609 4.75171 12.8 4.74999Z"></path> </g></svg>4</span>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-4">
+      <style>
+        .button {
+          --width: 100px;
+          --height: 35px;
+          --tooltip-height: 35px;
+          --tooltip-width: 90px;
+          --gap-between-tooltip-to-button: 18px;
+          --button-color: #222;
+          --tooltip-color: #fff;
+          width: var(--width);
+          height: var(--height);
+          background: var(--button-color);
+          position: relative;
+          text-align: center;
+          border-radius: 0.45em;
+          font-family: "Arial";
+          transition: background 0.3s;
+        }
+        
+        .button::before {
+          position: absolute;
+          content: attr(data-tooltip);
+          width: var(--tooltip-width);
+          height: var(--tooltip-height);
+          background-color: #555;
+          font-size: 0.9rem;
+          color: #fff;
+          border-radius: .25em;
+          line-height: var(--tooltip-height);
+          bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+          left: calc(50% - var(--tooltip-width) / 2);
+        }
+        
+        .button::after {
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0;
+          border: 10px solid transparent;
+          border-top-color: #555;
+          left: calc(50% - 10px);
+          bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+        }
+        
+        .button::after,.button::before {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.5s;
+        }
+        
+        .text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .button-wrapper,.text,.icon {
+          overflow: hidden;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          color: #fff;
+        }
+        
+        .text {
+          top: 0
+        }
+        
+        .text,.icon {
+          transition: top 0.5s;
+        }
+        
+        .icon {
+          color: #fff;
+          top: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .icon svg {
+          width: 24px;
+          height: 24px;
+        }
+        
+        .button:hover {
+          background: #222;
+        }
+        
+        .button:hover .text {
+          top: -100%;
+        }
+        
+        .button:hover .icon {
+          top: 0;
+        }
+        
+        .button:hover:before,.button:hover:after {
+          opacity: 1;
+          visibility: visible;
+        }
+        
+        .button:hover:after {
+          bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+        }
+        
+        .button:hover:before {
+          bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+        }
+        
+        
+        
+        
+      </style>
+      <div data-tooltip="Price:-$20" class="button">
+        <div class="button-wrapper">
+          <div class="text">Buy Now</div>
+          <span class="icon">
+            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+
+  <div class="m-5 row">
+    <div class="col-12 col-md-4">
+      <style>
+        button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #FF0072;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #FF0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #FF0072;
+  z-index: -1;
+}
+
+button:hover, button:focus {
+  color: white;
+}
+
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+      </style>
+      <button> Button
+      </button>
+    </div>
+  </div>
+
+</body>
+  
+  
+  

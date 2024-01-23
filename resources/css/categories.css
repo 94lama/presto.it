@@ -1,0 +1,22 @@
+.bg-category{
+    /* height: 300px; */
+    width: 100vw;
+}
+
+.img-category{
+    /* 1920 x 1080 -- l'immagine dev'essere intera -- */
+    height: 489px;
+    width: 100%;
+    object-fit: cover;
+    -webkit-mask-image: -webkit-gradient(linear, 100% 0%, 12% 375%, from(rgb(0, 0, 0)), to(transparent));
+    /* box-shadow: inset 100% 0% 12% 50% #212529; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 500px 18px 36px -18px inset; */
+    /* background: radial-gradient(circle, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 100%); */
+    object-position: right;
+    box-shadow:rgb(0, 0, 0)
+}
+
+.category-title{
+   position: absolute;
+    top:100px;
+}

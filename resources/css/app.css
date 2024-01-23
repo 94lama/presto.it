@@ -1,0 +1,17 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import './style.css';
+@import './card.css';
+@import './card-category.css';
+@import './navbar.css';
+@import './welcome.css';
+/* @import './login.css'; */
+@import './categories.css';
+@import './scrollbar.css';
+@import './show.css';
+@import './swiper.css';
+@import './revisor-request-form.css';
+@import 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css';
+@import 'https://unpkg.com/aos@2.3.1/dist/aos.css';
+@import './form.css';
+@import './loader.css';
+@import './footer.css';
